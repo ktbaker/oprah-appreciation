@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    	<title>Oprah</title>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style type="text/css">
+		h3 {
+			font-family:cursive;
+		}
+		ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		    top:0;
+		    width: 100%;
+		}
+		li {
+		    float: right;
+		}
+
+		li a, .dropbtn {
+		    display: inline-block;
+		    color: white;
+		    text-align: center;
+		    padding: 14px 30px;
+		    text-decoration: none;
+		}
+
+		li a:hover, .dropdown:hover .dropbtn {
+		    background-color: green;
+		}
+
+		li.dropdown {
+		    display: inline-block;
+		}
+
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f9f9f9;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		    text-align: left;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.show {display:block;}
+
+		.navbar {
+			margin-bottom: 0px !important;
+		}
+
+	</style>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+			<ul class="navbar nav">
+				<li><a href="oprahVeggies.html">Oprah &amp; Vegetables</a></li>
+				<li><a href="oprahDogs.html">Oprah &amp; Dogs</a></li>
+				<li><a href="oprahReaction.html">Oprah Reactions</a></li>
+				<li><a href="oprahGIFs.html">Oprah GIFs</a></li>
+				<li style = "float:left"><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+
+		<div class = "jumbotron">
+			<h1 style = "text-align:center">Oprah & Dogs</h1>
+		</div>
+		<h3 style = "text-align:center;">"An Oprah a day keeps the doctor away" - Dr. Phil</h3>
+
+		<hr>
+
+		<div class="row"> 
+        <!-- A block of thing you want within here -->
+            <div class="container">
+                <div class="col-lg-6">
+
+                    <!-- Col = column where you can arrange it up to 12-->
+                    <img src = "http://images.techtimes.com/data/images/full/158277/oprah.jpg" width="550">
+                    <img src = "http://static.oprah.com/images/o2/20111027-lifeclass-114-7-320x180.jpg" width="550">
+                    <img src = "https://s-media-cache-ak0.pinimg.com/564x/20/63/ba/2063ba01626201d6d508ef3847ce4883.jpg" width="550">
+                    <img src = "http://static.oprah.com/2016/08/201608-sss-oprah-luke-11-949x534.jpg" width="550">
+                    <img src = "http://images.more.mdpcdn.com/sites/more.com/files/styles/slide/public/600_celebrities-who-love-animals_oprah-winfrey.jpg" width="550">
+                </div>
+
+                <div class="col-lg-6">
+                    <img src = "http://www.itchmo.com/wp-content/uploads/2007/09/20050919_201_350x263.jpg" width="550">
+                    <img src = "http://images.boomsbeat.com/data/images/full/422/oprah14-jpg.jpg" width="550">
+                    <img src = "http://latimesblogs.latimes.com/photos/uncategorized/2008/04/02/oprah_winfrey___jpg.jpg" width="550">
+                    <img src = "http://3.bp.blogspot.com/-P883gRX4Ow8/TxUCvuvkaYI/AAAAAAAAGEk/DM0dQR12TA8/s1600/20081114_tows_fridays12_350x263.jpg" width="550">
+                </div>
+            </div>
+        </div>
+
+		<script>
+			/* When the user clicks on the button, 
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			    document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown if the user clicks outside of it
+			window.onclick = function(e) {
+			  if (!e.target.matches('.dropbtn')) {
+
+			    var dropdowns = document.getElementsByClassName("dropdown-content");
+			    for (var d = 0; d < dropdowns.length; d++) {
+			      var openDropdown = dropdowns[d];
+			      if (openDropdown.classList.contains('show')) {
+			        openDropdown.classList.remove('show');
+			      }
+			    }
+			  }
+			}
+		</script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+</html>
